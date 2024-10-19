@@ -89,11 +89,9 @@ describe('Image Registration', () => {
         it(`When I enter "${input.title}" in the title field`, () => {
             registerForm.typeTitle(input.title)
         })
-        it('Then I should see a check icon in the title field', () => {})
         it(`When I enter "${input.url}" in the URL field`, () => {
             registerForm.typeUrl(input.url)
         })
-        it('Then I should see a check icon in the imageUrl field', () => {})
         it('Then I can hit enter to submit the form', () => {
             registerForm.hitEnter()
             cy.wait(100)
